@@ -1,6 +1,6 @@
+package.json
+package-lock.json
+.vscode/
+Week1/.vscode/
+Week1/node_modules/
 node_modules/
-*/node_modules/
-**/*.DS_Store
-**/*-secret.json
-**/*.sh
-.idea
