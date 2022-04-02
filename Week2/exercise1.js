@@ -17,9 +17,9 @@ async function seedDatabase() {
 
     const createTableAuthors = `
   CREATE TABLE authors (
-    author_no INT,
-    author_name VARCHAR(250),
-    university VARCHAR(400),
+    author_no INT AUTO_INCREMENT,
+    author_name VARCHAR(30),
+    university VARCHAR(70),
     date_of_birth DATE,
     h_index SMALLINT,
     gender ENUM ('Male', 'Female'),

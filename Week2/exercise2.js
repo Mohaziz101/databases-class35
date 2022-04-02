@@ -18,8 +18,8 @@ async function seedDatabase() {
     const createTableAuthors = `
   CREATE TABLE authors (
     author_no INT,
-    author_name VARCHAR(300),
-    university VARCHAR(400),
+    author_name VARCHAR(30),
+    university VARCHAR(60),
     date_of_birth DATE,
     h_index SMALLINT,
     gender ENUM ('Male', 'Female'),
@@ -34,8 +34,8 @@ async function seedDatabase() {
     const createTableResearchPapers = `
   CREATE TABLE research_Papers (
     paper_id INT,
-    paper_title VARCHAR(600),
-    conference VARCHAR(400),
+    paper_title VARCHAR(100),
+    conference VARCHAR(100),
     publish_date DATE,
     PRIMARY KEY (paper_id)
   );`;
