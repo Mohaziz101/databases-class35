@@ -20,7 +20,7 @@ const execQuery = (connection, query) => {
 connection.connect();
 
 // All research papers and the number of authors that wrote that paper.
-const queryOne = `SELECT paper_title AS 'Paper Title',
+const queryOne = `SELECT author_name AS 'author Name',
                     COUNT(research_Papers.paper_title) AS 'Number of Authors' 
                   FROM authors 
                   JOIN authors_papers ON (authors.author_no = authors_papers.author_no)
